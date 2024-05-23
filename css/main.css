@@ -1,21 +1,32 @@
-# mtm6201-week2
-
-# Instructions
-
-Fork this repository to start working on the assignment.
-
-Here are the base CSS styles to start with.
-
-```css
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #222;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.emojis {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .emoji {
   border: 1px solid #222;
   border-radius: 8px;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 .emoji h2 {
@@ -34,4 +45,3 @@ body {
 .icon {
   font-size: 4rem;
 }
-```
