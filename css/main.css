@@ -4,7 +4,8 @@ body {
 }
 
 h1 {
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 18px;
 }
 
 .emojis {
@@ -20,18 +21,20 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 100%;
 }
 
 .icon {
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  order: -1;
 }
 
 .emoji h2 {
   margin: 0;
   border-bottom: 2px solid #ccc;
+  align-self: flex-start;
+  width: 100%;
+  
 }
 
 .emoji a {
@@ -40,8 +43,17 @@ h1 {
   color: white;
   padding: 1rem;
   border-radius: 8px;
+  text-align: left;
+  display: block;
 }
 
 .icon {
   font-size: 4rem;
 }
+
+.emoji p {
+  flex-grow: 1;
+}
+
+
+
